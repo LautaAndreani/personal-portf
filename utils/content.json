@@ -16,7 +16,7 @@
 	"socials": [
 		{
 			"social": "Linkedin",
-			"link": "linkedin.com/in/lautaroandreani/"
+			"link": "https://www.linkedin.com/in/lautaroandreani/"
 		},
 		{
 			"social": "Gmail",
@@ -24,7 +24,7 @@
 		},
 		{
 			"social": "Github",
-			"link": "github.com/LautaAndreani"
+			"link": "https://github.com/LautaAndreani"
 		}
 	],
 	"rightCard": [
