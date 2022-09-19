@@ -1,0 +1,45 @@
+{
+	"profile": {
+		"name": "Lautaro Andreani",
+		"position": "Desarrollador frontend | Javascript"
+	},
+	"aboutMe": "Tengo 21 años, soy de Mendoza, Argentina. Actualmente me encuentro trabajando como desarrollador frontend en <span style='color: #00D8FF'>Coderhouse. <br/><br/></span> Disfruto mucho hacer proyectos que yo mismo utilizaría, le doy una gran importancia a la <span style='color: #00D8FF'>performance</span> y a la experiencia del <span style='color: #00D8FF'>usuario.</span>",
+	"mostUsedTechs": ["ReactJs", "Typescript", "NextJs", "NodeJs"],
+	"experience": [
+		{
+			"company": "Coderhouse",
+			"position": "Desarrollador frontend",
+			"description": "Marzo 2022 - Actualidad",
+			"logo": "/assets/logos/coderhouse.png"
+		}
+	],
+	"socials": [
+		{
+			"social": "Linkedin",
+			"link": "linkedin.com/in/lautaroandreani/"
+		},
+		{
+			"social": "Gmail",
+			"link": "mailto:lautaroandreani2016@gmail.com"
+		},
+		{
+			"social": "Github",
+			"link": "github.com/LautaAndreani"
+		}
+	],
+	"rightCard": [
+		{
+			"title": "Ubicación",
+			"description": "Mendoza, Argentina"
+		},
+		{
+			"title": "Actualmente trabajando en",
+			"description": "<span style='color: #E5F876'>Coderhouse</span> <small> / Marzo 2022 - Actualidad</small>"
+		},
+		{
+			"title": "Más información",
+			"link": "/assets/CV_Lautaro_Andreani.pdf",
+			"description": "Ver CV &#8599;"
+		}
+	]
+}
