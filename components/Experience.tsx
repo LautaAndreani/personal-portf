@@ -1,5 +1,4 @@
 import { Avatar, Box, Flex, HStack, Stack, Text } from "@chakra-ui/react"
-import Title from "./Title"
 type Props = { company: string; position: string; date: string }
 
 const Experience = ({ company, position, date }: Props) => {

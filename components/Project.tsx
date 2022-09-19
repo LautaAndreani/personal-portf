@@ -1,6 +1,5 @@
 import {  HStack, Stack } from "@chakra-ui/react"
-import CardProject from "./CardProject"
-import Title from "./Title"
+import { Title, CardProject } from "./index"
 
 const Project = () => {
 	return (

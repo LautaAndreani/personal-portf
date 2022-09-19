@@ -1,7 +1,6 @@
-import { background, Badge, Heading, HStack } from "@chakra-ui/react"
-import React from "react"
+import { Badge, HStack } from "@chakra-ui/react"
 import content from "../utils/content.json"
-import Title from "./Title"
+import { Title } from "./index"
 
 const Techs = () => {
 	return (

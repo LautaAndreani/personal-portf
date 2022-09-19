@@ -1,11 +1,6 @@
 import { Box, HStack, Stack, Text } from "@chakra-ui/react"
 import content from "../utils/content.json"
-import ButtonComp from "./ButtonComp"
-import Experience from "./Experience"
-import Personal from "./Personal"
-import Project from "./Project"
-import Techs from "./Techs"
-import Title from "./Title"
+import { Title, Techs, Project, Personal, Experience, ButtonComp } from './index'
 
 const LeftLayout = () => {
 	return (
@@ -23,7 +18,7 @@ const LeftLayout = () => {
 				</HStack>
 				<Title title="Mis redes" />
 				<HStack p="1rem 0">
-					{content.socials.map(social => <ButtonComp link={social.link} social={social.social}/> )}
+					{content.socials.map((social, i) => <ButtonComp link={social.link} social={social.social} key={i}/> )}
 				</HStack>
 			</Stack>
 		</Box>

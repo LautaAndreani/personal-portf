@@ -1,9 +1,7 @@
 import type { NextPage } from "next"
 import TwoColsLayout from "../Layout/TwoColsLayout"
-import Wrapper from "../Layout/Wrapper"
-import LeftLayout from "./LeftLayout"
-import Profile from "./Profile"
-import RightCard from "./RigthCard"
+import { Wrapper } from '../Layout/index'
+import { Profile, RightCard, LeftLayout } from './index'
 
 const HomePage: NextPage = () => {
 	return (

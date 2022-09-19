@@ -1,5 +1,4 @@
 import { Box } from "@chakra-ui/react"
-import React from "react"
 
 type Props = { children: JSX.Element | JSX.Element[] }
 
