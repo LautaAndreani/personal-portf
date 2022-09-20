@@ -18,8 +18,8 @@ const Footer = () => {
 					{content.footer.links.map((link, i) => {
 						if (link !== "Inicio") {
 							return (
-								<Tooltip label="Próximamente...">
-									<Link key={i} textDecor="none" color={"whiteAlpha.400"} cursor="not-allowed">
+								<Tooltip key={i} label="Próximamente...">
+									<Link textDecor="none" color={"whiteAlpha.400"} cursor="not-allowed">
 										{link}
 									</Link>
 								</Tooltip>
