@@ -4,7 +4,7 @@ type Props = { children: JSX.Element | JSX.Element[] }
 
 const Wrapper = ({ children }: Props) => {
 	return (
-		<Box minH="100vh" minW="70%" width="60%" m="0 auto">
+		<Box minH="100vh" width="60%" m="0 auto">
 			{children}
 		</Box>
 	)

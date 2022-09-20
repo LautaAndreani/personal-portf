@@ -26,6 +26,7 @@ const theme = extendTheme({
 			border: "1px solid",
 			card_bg: "rgba(41, 41, 41, 0.25)",
 			rounded: "10px",
+			footer: "#C2C2C2",
 			// Badge colors
 			color_reactjs: "#6FB7FF",
 			color_typescript: "#56CCF2",

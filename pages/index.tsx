@@ -1,5 +1,6 @@
 import type { NextPage } from "next"
 import { HomePage } from "../components/index"
+import Footer from "../Layout/Footer"
 import Nav from "../Layout/Nav"
 
 const Home: NextPage = () => {
@@ -7,6 +8,7 @@ const Home: NextPage = () => {
 		<>
 			<Nav />
 			<HomePage />
+			<Footer />
 		</>
 	)
 }

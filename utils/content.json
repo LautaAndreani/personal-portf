@@ -41,5 +41,10 @@
 			"link": "/assets/CV_Lautaro_Andreani.pdf",
 			"description": "Ver CV &#8599;"
 		}
-	]
+	],
+	"footer": {
+		"title": "Gracias por leer 🤓",
+		"description": "Realizado con NextJs, ChakraUI, Typescript",
+		"links": ["Inicio", "Blog", "Sobre el proyecto"]
+	}
 }
