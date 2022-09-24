@@ -19,7 +19,7 @@ export default Home
 export async function getStaticProps() {
 	const getProjects = await fetch("https://api.github.com/users/LautaAndreani/repos")
 	.then(res => res.json())
-	.catch((error) => error.message)
+	.catch((error) => console.log(error.message))
 	
 	return {
 		props: { projects: getProjects },
