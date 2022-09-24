@@ -25,7 +25,7 @@ const Footer = () => {
 								</Tooltip>
 							)
 						}
-						return <Link key={i}>{link}</Link>
+						return <Link key={i} color="brand.text_reference">{link}</Link>
 					})}
 				</HStack>
 				<Link>Click 🥳</Link>

@@ -3,8 +3,8 @@
 		"name": "Lautaro Andreani",
 		"position": "Desarrollador frontend | Javascript"
 	},
-	"aboutMe": "Tengo 21 años, soy de Mendoza, Argentina. Actualmente me encuentro trabajando como desarrollador frontend en <span style='color: #00D8FF'>Coderhouse. <br/><br/></span> Disfruto mucho hacer proyectos que yo mismo utilizaría, le doy una gran importancia a la <span style='color: #00D8FF'>performance</span> y a la experiencia del <span style='color: #00D8FF'>usuario.</span>",
-	"mostUsedTechs": ["ReactJs", "Typescript", "NextJs", "NodeJs"],
+	"aboutMe": "Tengo 21 años, soy de Mendoza, Argentina. Actualmente me encuentro trabajando como desarrollador frontend en <a href='https://www.coderhouse.com' target='_blank' style='color: #00D8FF'>Coderhouse. <br/><br/></a> Disfruto mucho hacer proyectos que yo mismo utilizaría, le doy una gran importancia a la <span style='color: #00D8FF'>performance</span> y a la experiencia del <span style='color: #00D8FF'>usuario.</span>",
+	"mostUsedTechs": ["Javascript", "Typescript", "NextJs", "NodeJs", "ReactJs"],
 	"experience": [
 		{
 			"company": "Coderhouse",
@@ -46,5 +46,6 @@
 		"title": "Gracias por leer 🤓",
 		"description": "Realizado con NextJs, ChakraUI, Typescript",
 		"links": ["Inicio", "Blog", "Sobre el proyecto"]
-	}
+	},
+	"best_repos": ["ALOJAMENDO","COUNTRY-QUIZ", "AIRBNB-CLONE","VUELINGO"]
 }

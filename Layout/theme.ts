@@ -32,10 +32,12 @@ const theme = extendTheme({
 			color_typescript: "#56CCF2",
 			color_nextjs: "#E0E0E0",
 			color_nodejs: "#8CFF64",
+			color_javascript: "#FFEF64",
 			bg_reactjs: "rgba(111, 183, 255, 0.23)",
 			bg_typescript: "rgba(0, 216, 255, 0.12)",
 			bg_nextjs: "rgba(235, 248, 255, 0.13)",
 			bg_nodejs: "rgba(187, 255, 100, 0.13)",
+			bg_javascript:"rgba(251, 215, 123, 0.24)",
 		},
 	},
 })

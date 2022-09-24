@@ -1,14 +1,15 @@
 import { Box, HStack, Stack, Text } from "@chakra-ui/react"
+import { Projects } from "../types/types"
 import content from "../utils/content.json"
 import { Title, Techs, Project, Personal, Experience, ButtonComp } from "./index"
 
-const LeftLayout = () => {
+const LeftLayout = ({projects}: Projects) => {
 	return (
 		<Box width="90%">
 			<Personal />
 			<Stack mt="2rem">
 				<Text className="about-me" dangerouslySetInnerHTML={{ __html: content.aboutMe }}></Text>
-				<Project />
+				<Project projects={projects}/>
 				<Techs />
 				<Title title="Experiencia" />
 				<HStack>
