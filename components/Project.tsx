@@ -1,18 +1,30 @@
-import {  HStack, Stack } from "@chakra-ui/react"
-import { Projects } from "../types/types"
+import { useState, useEffect } from "react"
+import { Button, HStack, Img, Stack } from "@chakra-ui/react"
+import { Project, Projects } from "../types/types"
 import { Title, CardProject } from "./index"
-import content from '../utils/content.json'
+import content from "../utils/content.json"
+import next from "next"
 
 const Project = ({ projects }: Projects) => {
-	const { best_repos } = content
+	const limitedProjects = projects.filter(repo => content.best_repos.includes(repo.name.toUpperCase()))
 
-	const limitProjects = projects.filter(repo => best_repos.includes(repo.name.toUpperCase()))
+	const [nextProject, setNextProject] = useState(0)
+	const [filterProjects, setFilterProjects] = useState<Project>(limitedProjects[nextProject])
+
+	const handleCarousel = () => setNextProject(prev => prev + 1) 
+
+	useEffect(() => {
+		if (nextProject === limitedProjects.length) return setNextProject(0)
+		setFilterProjects(limitedProjects[nextProject])
+	}, [nextProject])
+
 
 	return (
 		<Stack>
 			<Title title="Proyectos" />
-			<HStack overflowX="auto" padding={3}>
-				{limitProjects.map((project, i) => <CardProject key={i} project={project}/>)}
+			<HStack padding={3}>
+				<CardProject project={filterProjects} />
+				<Img src="/assets/icons/arrow-right-circle.svg" alt="arrow right button" width="2rem" filter="invert(1)" role="button" onClick={handleCarousel}/>
 			</HStack>
 		</Stack>
 	)
