@@ -1,9 +1,8 @@
 import { useState, useEffect } from "react"
-import { Button, HStack, Img, Stack } from "@chakra-ui/react"
+import { HStack, Img, Stack } from "@chakra-ui/react"
 import { Project, Projects } from "../types/types"
 import { Title, CardProject } from "./index"
 import content from "../utils/content.json"
-import next from "next"
 
 const Project = ({ projects }: Projects) => {
 	const limitedProjects = projects.filter(repo => content.best_repos.includes(repo.name.toUpperCase()))
