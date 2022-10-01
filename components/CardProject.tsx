@@ -17,7 +17,7 @@ const CardProject = ({ project }: Props) => {
 			p={5}
 			gap={4}>
 			<HStack gap={2} className="title">
-				<Avatar src={`/assets/icons/projects-avatar/${project.name}.svg`} name={project.name} />
+				<Avatar src={`/assets/icons/projects-avatar/${project.name}.svg`} name={project.name} bg="transparent" />
 				<Heading size="md" fontWeight={500}>
 					{project.name}
 				</Heading>

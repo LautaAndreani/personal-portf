@@ -19,13 +19,17 @@ const Footer = () => {
 						if (link !== "Inicio") {
 							return (
 								<Tooltip key={i} label="Próximamente...">
-									<Link textDecor="none" color={"whiteAlpha.400"} cursor="not-allowed">
+									<Link href="#!" textDecor="none" color={"whiteAlpha.400"} cursor="not-allowed">
 										{link}
 									</Link>
 								</Tooltip>
 							)
 						}
-						return <Link key={i} color="brand.text_reference">{link}</Link>
+						return (
+							<Link href="#!" key={i} color="brand.text_reference">
+								{link}
+							</Link>
+						)
 					})}
 				</HStack>
 				<Link>Click 🥳</Link>
