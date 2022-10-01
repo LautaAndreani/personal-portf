@@ -1,11 +1,12 @@
 import { extendTheme } from "@chakra-ui/react"
 //fonts
 import "@vetixy/circular-std"
+import "@fontsource/space-mono"
 
 const theme = extendTheme({
 	fonts: {
-		heading: `'CircularStd', sans-serif`,
 		body: `'CircularStd', sans-serif`,
+		heading: `"Space Mono", spacemono`,
 	},
 	styles: {
 		global: () => ({
@@ -36,7 +37,7 @@ const theme = extendTheme({
 			bg_typescript: "rgba(0, 216, 255, 0.12)",
 			bg_nextjs: "rgba(235, 248, 255, 0.13)",
 			bg_nodejs: "rgba(187, 255, 100, 0.13)",
-			bg_javascript:"rgba(251, 215, 123, 0.24)",
+			bg_javascript: "rgba(251, 215, 123, 0.24)",
 		},
 	},
 })
