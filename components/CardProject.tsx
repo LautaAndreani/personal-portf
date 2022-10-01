@@ -17,7 +17,7 @@ const CardProject = ({ project }: Props) => {
 			p={5}
 			gap={4}>
 			<HStack gap={2} className="title">
-				<Avatar src={`/assets/icons/projects-avatar/${project.name}.svg`} />
+				<Avatar src={`/assets/icons/projects-avatar/${project.name}.svg`} name={project.name} />
 				<Heading size="md" fontWeight={500}>
 					{project.name}
 				</Heading>
@@ -39,8 +39,8 @@ const CardProject = ({ project }: Props) => {
 						Proyecto &#8599;
 					</Button>
 				</Link>
-				<Link href={project.html_url} target="_blank">
-					<Img src='/assets/icons/github_iso.svg' width="1.2rem" ml={2}/>
+				<Link href={project.html_url} target="_blank" aria-label="Ver repositorio del proyecto">
+					<Img src="/assets/icons/github_iso.svg" width="1.2rem" ml={2} />
 				</Link>
 			</Flex>
 		</Stack>
