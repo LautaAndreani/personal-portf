@@ -1,9 +1,11 @@
-import { Heading, Link, Stack, Text } from "@chakra-ui/react"
+import { Flex, Heading, Link, Stack, Text } from "@chakra-ui/react"
 import NextLink from "next/link"
+import { Content } from "../types/types"
+import DotAnimation from "./DotAnimation"
 
-type Props = { title: string; description: string; link?: string }
+type ContentProps = { info: Content }
 
-const Content = ({ title, description, link }: Props) => {
+const Content = ({ info: { title, description, link, content_key } }: ContentProps) => {
 	if (link) {
 		return (
 			<Stack p=".8rem 0">
@@ -12,11 +14,7 @@ const Content = ({ title, description, link }: Props) => {
 				</Heading>
 				<Stack>
 					<NextLink href={link} passHref>
-						<Link
-							w="fit-content"
-							isExternal
-							color="brand.text_reference"
-							dangerouslySetInnerHTML={{ __html: description }}></Link>
+						<Link w="fit-content" isExternal color="brand.text_reference" dangerouslySetInnerHTML={{ __html: description }}></Link>
 					</NextLink>
 				</Stack>
 			</Stack>
@@ -28,9 +26,10 @@ const Content = ({ title, description, link }: Props) => {
 			<Heading size="md" fontWeight={500}>
 				{title}
 			</Heading>
-			<Stack>
+			<Flex alignItems="center" gap="2">
+				{content_key === "actual_job" && <DotAnimation />}
 				<Text dangerouslySetInnerHTML={{ __html: description }}></Text>
-			</Stack>
+			</Flex>
 		</Stack>
 	)
 }

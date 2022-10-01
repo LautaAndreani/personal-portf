@@ -3,7 +3,7 @@
 		"name": "Lautaro Andreani",
 		"position": "Desarrollador frontend | Javascript"
 	},
-	"aboutMe": "Tengo 21 años, soy de Mendoza, Argentina. Actualmente me encuentro trabajando como desarrollador frontend en <a href='https://www.coderhouse.com' target='_blank' style='color: #00D8FF'>Coderhouse. <br/><br/></a> Disfruto mucho hacer proyectos que yo mismo utilizaría, le doy una gran importancia a la <span style='color: #00D8FF'>performance</span> y a la experiencia del <span style='color: #00D8FF'>usuario.</span>",
+	"aboutMe": "Tengo 22 años, soy de Mendoza, Argentina. Actualmente me encuentro trabajando como desarrollador frontend en <a href='https://www.coderhouse.com' target='_blank' style='color: #00D8FF'>Coderhouse. <br/><br/></a> Disfruto mucho hacer proyectos que yo mismo utilizaría, le doy una gran importancia a la <span style='color: #00D8FF'>performance</span> y a la experiencia del <span style='color: #00D8FF'>usuario.</span>",
 	"mostUsedTechs": ["Javascript", "Typescript", "NextJs", "NodeJs", "ReactJs"],
 	"experience": [
 		{
@@ -30,16 +30,19 @@
 	"rightCard": [
 		{
 			"title": "Ubicación",
-			"description": "Mendoza, Argentina"
+			"description": "Mendoza, Argentina",
+			"content_key": "actual_location"
 		},
 		{
 			"title": "Actualmente trabajando en",
-			"description": "<span style='color: #E5F876'>Coderhouse</span> <small> / Marzo 2022 - Actualidad</small>"
+			"description": "<span style='color: #E5F876'>Coderhouse</span> <small> / Marzo 2022 - Actualidad</small>",
+			"content_key": "actual_job"
 		},
 		{
 			"title": "Más información",
 			"link": "/assets/CV_Lautaro_Andreani.pdf",
-			"description": "Ver CV &#8599;"
+			"description": "Ver CV &#8599;",
+			"content_key": "cv"
 		}
 	],
 	"footer": {
@@ -47,5 +50,5 @@
 		"description": "Realizado con NextJs, ChakraUI, Typescript",
 		"links": ["Inicio", "Blog", "Sobre el proyecto"]
 	},
-	"best_repos": ["ALOJAMENDO","COUNTRY-QUIZ", "AIRBNB-CLONE","VUELINGO"]
+	"best_repos": ["ALOJAMENDO", "COUNTRY-QUIZ", "AIRBNB-CLONE", "VUELINGO"]
 }
