@@ -16,15 +16,18 @@
 	"socials": [
 		{
 			"social": "Linkedin",
-			"link": "https://www.linkedin.com/in/lautaroandreani/"
+			"link": "https://www.linkedin.com/in/lautaroandreani/",
+			"alt": "Linkedin button"
 		},
 		{
 			"social": "Gmail",
-			"link": "mailto:lautaroandreani2016@gmail.com"
+			"link": "mailto:lautaroandreani2016@gmail.com",
+			"alt": "Gmail button"
 		},
 		{
 			"social": "Github",
-			"link": "https://github.com/LautaAndreani"
+			"link": "https://github.com/LautaAndreani",
+			"alt": "Github button"
 		}
 	],
 	"rightCard": [

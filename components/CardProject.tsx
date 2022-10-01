@@ -1,4 +1,4 @@
-import { Avatar, Badge, Button, Divider, Flex, Heading, HStack, Img, Link, Stack, Text } from "@chakra-ui/react"
+import { Avatar, Badge, Button, Divider, Flex, Heading, HStack, Image, Link, Stack, Text } from "@chakra-ui/react"
 import { Project } from "../types/types"
 type Props = { project: Project }
 
@@ -40,7 +40,7 @@ const CardProject = ({ project }: Props) => {
 					</Button>
 				</Link>
 				<Link href={project.html_url} target="_blank" aria-label="Ver repositorio del proyecto">
-					<Img src="/assets/icons/github_iso.svg" width="1.2rem" ml={2} />
+					<Image src="/assets/icons/github_iso.svg" ml={2} alt="Github logo" boxSize="20px" />
 				</Link>
 			</Flex>
 		</Stack>
