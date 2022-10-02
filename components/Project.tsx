@@ -22,7 +22,15 @@ const Project = ({ projects }: Projects) => {
 			<Title title="Proyectos" />
 			<HStack padding={3}>
 				<CardProject project={filterProjects} />
-				<Img src="/assets/icons/arrow-right-circle.svg" alt="arrow right button" width="2rem" filter="invert(1)" role="button" onClick={handleCarousel} />
+				<Img
+					src="/assets/icons/arrow-right-circle.svg"
+					alt="arrow right button"
+					width="2rem"
+					filter="invert(1)"
+					role="button"
+					onClick={handleCarousel}
+					boxSize="20px"
+				/>
 			</HStack>
 		</Stack>
 	)
