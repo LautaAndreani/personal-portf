@@ -15,7 +15,9 @@ const Layout = ({ children }: Props) => {
 					content="Tengo 22 años, soy de Mendoza, Argentina. Actualmente me encuentro trabajando como desarrollador frontend en..."
 				/>
 			</Head>
-			<Box as="main">{children}</Box>
+			<Box as="main" bgImage="/assets/grain-dark.png" bgRepeat="repeat" bgPosition="center">
+				{children}
+			</Box>
 		</>
 	)
 }
