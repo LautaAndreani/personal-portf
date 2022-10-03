@@ -6,7 +6,7 @@ const Techs = () => {
 	return (
 		<>
 			<Title title="Tecnologías destacadas" />
-			<HStack letterSpacing={1}>
+			<HStack letterSpacing={1} flexWrap="wrap">
 				{content.mostUsedTechs.map((tech, i) => (
 					<Badge
 						key={i}

@@ -1,9 +1,9 @@
-import { Box, Center, Divider, Heading, HStack, Link, Stack, Text, Tooltip } from "@chakra-ui/react"
+import { Center, Divider, Flex, Heading, HStack, Link, Stack, Text, Tooltip } from "@chakra-ui/react"
 import content from "../utils/content.json"
 
 const Footer = () => {
 	return (
-		<Stack width="60%" m="2rem auto" gap={5}>
+		<Stack width={{ sm: "80%", xl: "60%" }} p="0 1rem" m="2rem auto" gap={5}>
 			<Center flexDirection="column" gap={2}>
 				<Heading size="sm" fontWeight={400}>
 					{content.footer.title}
@@ -14,7 +14,7 @@ const Footer = () => {
 				<Divider />
 			</Center>
 			<HStack justifyContent="space-between">
-				<HStack gap={5}>
+				<Flex gap={5} direction={{ xl: "row", sm: "column" }}>
 					{content.footer.links.map((link, i) => {
 						if (link !== "Inicio") {
 							return (
@@ -31,7 +31,7 @@ const Footer = () => {
 							</Link>
 						)
 					})}
-				</HStack>
+				</Flex>
 				<Link>Click 🥳</Link>
 			</HStack>
 		</Stack>
